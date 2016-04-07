@@ -67,6 +67,11 @@ module RubyXymon
     # write
     t.puts(msg)
 
+		# read
+		while line = t.gets   # Read lines from the socket
+			puts line.chop      # And print with platform line terminator
+		end
+
     # close
     t.close
   end
